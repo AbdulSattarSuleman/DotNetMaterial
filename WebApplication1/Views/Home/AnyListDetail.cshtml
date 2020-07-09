@@ -1,0 +1,36 @@
+﻿@model WebApplication1.Models.AnyList
+
+@{
+    ViewData["Title"] = "AnyListDetail";
+}
+
+<h1>AnyListDetail</h1>
+
+<div>
+    <h4>AnyList</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FatherName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FatherName)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "AnyListEdit", new { Id = Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>

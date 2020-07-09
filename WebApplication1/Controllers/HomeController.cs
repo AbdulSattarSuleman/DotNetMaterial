@@ -30,20 +30,68 @@ namespace WebApplication1.Controllers
 
         public IActionResult List()
         {
-            List<Anylist> list = new List<Anylist>();
+           
+            //for(int i = 0; i < 15; i++)
+            //{
+            //    //var anylistobj = new AnyList();
+            //    //anylistobj.FatherName = "Gabru";
+            //    //list.Add(anylistobj);
 
-            for(int i = 0; i < 15; i++)
-            {
-                list.Add(new Anylist()
-                {
-                    Id = i,
-                    Name = "Hammad" + i,
-                    FatherName = "Gabru" + i
-                });
 
-            }
+                
+            //    Utility.list.Add(
+            //        new AnyList()
+            //        {
+            //            Id = i,
+            //            Name = "Hammad" + i,
+            //            FatherName = "Gabru" + i
+            //        });
 
-            return View(list);
+            //}
+
+            return View(Utility.list);
+        }
+
+        [HttpGet]
+        public IActionResult AnyListCreate()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AnyListCreate(AnyList anyList)
+        {
+            anyList.Id = Utility.list.Count + 1;
+            Utility.list.Add(anyList);
+            return RedirectToAction("List");
+        }
+
+        [HttpGet]
+        public IActionResult AnyListEdit(int Id)
+        {
+            var obj =  Utility.list[Id - 1];
+            return View(obj);
+        }
+
+        [HttpPost]
+        public IActionResult AnyListEdit(AnyList anyList)
+        {
+            Utility.list[anyList.Id - 1] = anyList;
+            return RedirectToAction("List");
+        }
+
+        [HttpGet]
+        public IActionResult AnyListDetail(int Id)
+        {
+            var obj = Utility.list[Id - 1];
+            return View(obj);
+        }
+
+        [HttpGet]
+        public IActionResult AnyListDelete(int Id)
+        {
+            Utility.list.RemoveAt(Id - 1);
+            return RedirectToAction("List");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -53,3 +101,4 @@ namespace WebApplication1.Controllers
         }
     }
 }
+ 

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplication1.Models.Anylist>
+﻿@model IEnumerable<WebApplication1.Models.AnyList>
 
 @{
     ViewData["Title"] = "List";
@@ -7,7 +7,7 @@
 <h1>List</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="AnyListCreate">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.FatherName)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "AnyListEdit", new { Id = item.Id }) |
+                @Html.ActionLink("Details", "AnyListDetail", new { Id = item.Id }) |
+                @Html.ActionLink("Delete", "AnyListDelete", new {  id=item.Id })
             </td>
         </tr>
 }

@@ -197,7 +197,6 @@ C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\W
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
-C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cache
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cs
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.TagHelpers.input.cache
@@ -220,3 +219,6 @@ C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\s
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\AnyListCreate.cshtml.g.cs
+C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\AnyListEdit.cshtml.g.cs
+C:\Users\abdul\Desktop\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\Razor\Views\Home\AnyListDetail.cshtml.g.cs
